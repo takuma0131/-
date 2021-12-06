@@ -35,27 +35,37 @@
           <br />
           <span class="notification">お知らせ</span>
         </h2>
-        <dl class="title">
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-        </dl>
+        <ul class="notice-list">
+          <li class="notice-item">
+            <time class="notice-postday" datetime="2021-01-01">2021.01.01</time>
+            <span class="notice-title">タイトルタイトルタイトルタイトル</span>
+          </li>
+          <li class="notice-item">
+            <time class="notice-postday" datetime="2021-01-01">2021.01.01</time>
+            <span class="notice-title">タイトルタイトルタイトルタイトル</span>
+          </li>
+          <li class="notice-item">
+            <time class="notice-postday" datetime="2021-01-01">2021.01.01</time>
+            <span class="notice-title">タイトルタイトルタイトルタイトル</span>
+          </li>
+          <li class="notice-item">
+            <time class="notice-postday" datetime="2021-01-01">2021.01.01</time>
+            <span class="notice-title">タイトルタイトルタイトルタイトル</span>
+          </li>
+          <li class="notice-item">
+            <time class="notice-postday" datetime="2021-01-01">2021.01.01</time>
+            <span class="notice-title">タイトルタイトルタイトルタイトル</span>
+          </li>
+        </ul>
       </section>
       <section id="section1">
         <h2>
-          <span class="section1-title">新しい価値の創造</span>
-          <span class="section1-subtitle">Create New Values</span>
+          <span class="section-title">新しい価値の創造</span>
+          <span class="section-subtitle">Create New Values</span>
         </h2>
-        <div class="create">
+        <div class="product">
           <img src="./images/create.jpeg" alt />
-          <p class="text">
+          <p class="product-text">
             テキストテキスト
             <br />
             テキストテキスト
@@ -64,19 +74,19 @@
       </section>
       <section id="section2">
         <h2>
-          <span>科学と技術の調和</span>
-          <span>Science & Technology</span>
+          <span class="section-title">科学と技術の調和</span>
+          <span class="section-subtitle">Science & Technology</span>
         </h2>
-        <div class="science">
+        <div class="product">
           <img src="./images/science.jpg" alt />
-          <p class="text">
+          <p class="product-text secondary">
             テキストテキスト
             <br />
             テキストテキスト
           </p>
         </div>
       </section>
-      <div>
+      <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1792.1270061697599!2d139.73405579786504!3d35.66405837535625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1638067335203!5m2!1sja!2sjp"
           width="600"
@@ -87,37 +97,40 @@
         ></iframe>
       </div>
     </main>
-    <footer>
-      <div>
-        <div>
+    <footer id="footer">
+      <div class="detail">
+        <div class="mail">
           <p>
-            <a href="#" target="_brank">オンラインんストアを見る</a>
+            <a href="#" target="_brank">オンラインストアを見る</a>
             ｜
             <a href="mailto:xxxxx@xxx.xxx.com">お問い合わせ</a>
           </p>
         </div>
-        <div>
-          <h2>創作</h2>
-          <p>
-            〒106-0032 東京都港区六本木５丁目xxxxx
+        <div class="footer-create">
+          <h2 class="text-create">創作</h2>
+          <p class="address">
+            <span class="address-text"
+              >〒106-0032 東京都港区六本木５丁目xxxxx</span
+            >
             <br />
-            電話：
-            <a href="tel:03-xxxx-xxxx">03-xxxx-xxxx</a>
+            <span class="address-text"
+              >電話： <a href="tel:03-xxxx-xxxx">03-xxxx-xxxx</a></span
+            >
           </p>
-          <ul>
+          <ul class="footer-nav">
             <li>
-              <a href="">お知らせ</a>
+              <a href="" class="footer-item">お知らせ</a>
             </li>
             <li>
-              <a href="">商品のご紹介</a>
+              <a href="" class="footer-item">商品のご紹介</a>
             </li>
             <li>
-              <a href="">店舗のご案内</a>
+              <a href="" class="footer-item">店舗のご案内</a>
             </li>
           </ul>
         </div>
       </div>
-      <p>&copy; SOUSAKU</p>
+      <p class="footer-last">&copy; SOUSAKU</p>
     </footer>
   </body>
 </html>
