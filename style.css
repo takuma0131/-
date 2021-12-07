@@ -127,16 +127,15 @@ a {
   display: block;
   color: #fff;
   background-color: #000;
-  height: 400px;
 }
-#footer .detail {
+.detail {
   writing-mode: vertical-rl;
   display: flex;
   justify-content: space-between;
   flex-direction: column-reverse;
   width: 95%;
   margin: 0 auto;
-  height: 370px;
+  padding: 5% 0 3%;
 }
 .footer-create {
   margin: 10%;
@@ -149,19 +148,35 @@ a {
   padding-bottom: 10px;
 }
 .mail {
-  margin: 10%;
   font-size: 0.9rem;
 }
 .address {
-  margin: 10%;
   font-size: 0.7rem;
 }
 .address-text {
   line-height: 25px;
 }
 .footer-item {
-  line-height: 31px;
+  margin-left: 10px;
   font-size: 0.9rem;
+  display: block;
 }
 
-@media screen and(max-width: 480px);
+@media screen and (max-width: 480px) {
+  .product img {
+    width: 100%;
+  }
+  .product-text.secondary {
+    bottom: 118px;
+    left: 44%;
+  }
+  .section-subtitle {
+    display: none;
+  }
+  .detail {
+    width: 100%;
+  }
+  .notice-item:nth-child(n + 4) {
+    display: none;
+  }
+}
