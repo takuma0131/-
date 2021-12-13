@@ -85,6 +85,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 #section1 h2 span {
   writing-mode: vertical-rl;
@@ -186,12 +187,23 @@ a {
   #header .online {
     top: 67%;
   }
+  .notice-item {
+    padding: 0;
+  }
+  .notice-title {
+    padding: 15px 0 12px 15px;
+  }
+  .notice-postday {
+    padding: 4%;
+    display: block;
+  }
   #section1 {
     padding-bottom: 100px;
     align-items: flex-start;
   }
   .product img {
-    width: 289.5px;
+    width: 100%;
+    margin-top: 70px;
   }
   .product-text {
     width: 53%;
@@ -200,23 +212,40 @@ a {
     right: 50%;
   }
   .product-text.secondary {
-    bottom: 118px;
-    left: 44%;
+    bottom: -17px;
+    left: 50%;
   }
   .section-title {
     font-size: 1.5rem;
+    margin-left: 10px;
   }
   .section-subtitle {
     display: none;
   }
   #section2 {
     margin-bottom: 100px;
+    padding: 9%;
+  }
+  #section2 .section-title {
+    margin: 0 10px 0 0;
   }
   .detail {
     width: 100%;
   }
-  .footer-create {
+  #footer {
+    padding: 40px 20px;
+  }
+  .text-create {
     margin-right: 0;
+  }
+  .footer-create {
+    margin: 0;
+  }
+  .footer-nav {
+    padding-right: 25px;
+  }
+  .footer-last {
+    padding: 0;
   }
   .notice-item:nth-child(n + 4) {
     display: none;
