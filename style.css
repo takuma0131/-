@@ -77,7 +77,11 @@ a {
 #section1 {
   display: flex;
   flex-direction: row-reverse;
-  padding: 9%;
+}
+.products {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-bottom: 180px;
   align-items: flex-end;
 }
 #section1 h2 {
@@ -86,6 +90,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 0;
+  padding-left: 24px;
 }
 #section1 h2 span {
   writing-mode: vertical-rl;
@@ -111,19 +116,21 @@ a {
   background: rgba(249, 233, 6, 0.6);
   text-align: center;
   position: absolute;
-  bottom: -20px;
+  bottom: -24px;
+  left: -24px;
 }
 .product-text.secondary {
   background: rgba(149, 42, 38, 0.6);
-  bottom: 118px;
-  left: 220px;
+  bottom: -24px;
+  right: -24px;
+  left: auto;
 }
 #section2 {
   display: flex;
-  margin-bottom: 180px;
 }
 #section2 h2 {
   writing-mode: vertical-rl;
+  margin-left: 0;
 }
 .map iframe {
   width: 100%;
@@ -201,6 +208,9 @@ a {
     padding-bottom: 100px;
     align-items: flex-start;
   }
+  #section1 h2 {
+    padding-left: 0;
+  }
   .product img {
     width: 100%;
     margin-top: 70px;
@@ -209,11 +219,12 @@ a {
     width: 53%;
     padding: 30px 0;
     font-size: 0.8rem;
-    right: 50%;
+    line-height: 1.5;
+    left: -20px;
+    bottom: -20px;
   }
   .product-text.secondary {
-    bottom: -17px;
-    left: 50%;
+    right: -20px;
   }
   .section-title {
     font-size: 1.5rem;
@@ -224,7 +235,6 @@ a {
   }
   #section2 {
     margin-bottom: 100px;
-    padding: 9%;
   }
   #section2 .section-title {
     margin: 0 10px 0 0;
@@ -252,5 +262,9 @@ a {
   }
   .notice-item:nth-child(3) {
     border-left: 1px solid black;
+  }
+  .products {
+    align-items: flex-start;
+    padding: 0 20px;
   }
 }
